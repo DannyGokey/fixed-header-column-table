@@ -20,6 +20,7 @@ $(function () {
             $scrollHeader = $('.dataTables_scrollHead'),
             $scrollColumn = $('.DTFC_LeftBodyWrapper');
 
+
         $('.DTFC_LeftBodyWrapper td, .dataTables_scrollHeadInner th').on('click', function (e) {
 
             var $target = $(e.target).closest('td,th'),
@@ -107,6 +108,7 @@ $(function () {
 
             $tds.addClass('highlighted');
         });
+
     };
 
     var onFirstDraw = _.once(function () {
